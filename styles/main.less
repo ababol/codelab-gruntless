@@ -27,16 +27,16 @@ h1 {
 }
 
 section, footer {
-  text-align: center;
   display: inline-block;
+  h1{
+    text-align: center;
+  }
+
   width: 100% - 2*@bigScreenPadding;
   padding: 0 @bigScreenPadding;
   @media (max-width:@maxLittleScreen) {
     width: 100% - 2*@littleScreenPadding;
     padding: 0 @littleScreenPadding;
-  }
-  >h1{
-    text-align: center;
   }
 }
 .container {
