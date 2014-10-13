@@ -7,6 +7,10 @@
 @iterations: 10;
 @skillColors: #1cffc2 #00ffa6 #61d700 #00b202 #f7ff00 #ff9100 #ff00a6 #ff0000 #ff0000 #ff0000;
 
+@maxLittleScreen: 768px;
+@bigScreenPadding : 10%;
+@littleScreenPadding: 3%;
+
 html, body {
   top: 0;
   left: 0;
@@ -23,11 +27,14 @@ h1 {
 
 section, footer{
   display: inline-block;
-  width: 80%;
-  padding: 0 10%;
-  @media (max-width:768px) {
-    width: 94%;
-    padding: 0 3%;
+  width: 100% - 2*@bigScreenPadding;
+  padding: 0 @bigScreenPadding;
+  @media (max-width:@maxLittleScreen) {
+    width: 100% - 2*@littleScreenPadding;
+    padding: 0 @littleScreenPadding;
+  }
+  >h1{
+    text-align: center;
   }
 }
 .container {
