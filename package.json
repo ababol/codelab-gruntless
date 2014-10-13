@@ -1,0 +1,16 @@
+{
+  "name": "Codelab-GruntLess",
+  "version": "0.0.1",
+  "description": "Why you should use Grunt/LESS/Sass",
+  "private": true,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
