@@ -9,9 +9,8 @@
           height: ~"@{i}em";
           line-height: ~"@{i}em";
 
-          background-color: fade(extract(@skillColors, ~"@{i}"), 30);
+          background-color: fade(extract(@skillColors, ~"@{i}"), 80);
           border-color: extract(@skillColors, ~"@{i}");
-          color: extract(@skillColors, ~"@{i}");
         }
         .skill-loop(@i - 1);
     }
@@ -24,6 +23,7 @@
     text-align: center;
     max-width: 35em;
     margin: 2em auto 2em;
+    color: white;
   }
   .skills-diagram > dd {
     /* Hide inner attributes */
